@@ -9,7 +9,7 @@ buildscript {
   }
 }
 
-group: 'springio'
+group = 'usmantahir'
 
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
