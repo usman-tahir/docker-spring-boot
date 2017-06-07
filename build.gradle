@@ -1,4 +1,7 @@
 
+def groupName = 'usmantahir' // Change this based on you Docker hub group name
+def javaVersion = 1.7
+
 buildscript {
   repositories {
     mavenCentral()
@@ -9,7 +12,7 @@ buildscript {
   }
 }
 
-group = 'usmantahir'
+group = '${groupName}'
 
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
@@ -24,8 +27,8 @@ repositories {
   mavenCentral()
 }
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
 
 dependencies {
   compile('org.springframework.boot:spring-boot-starter-web')
